@@ -1,0 +1,55 @@
+.header {
+  @extend %list;
+
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+
+  & .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.flex-icon {
+  display: flex;
+  align-items: center;
+  fill: $primary-text-color;
+  color: $primary-text-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item-envelop {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.item-mobile {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.header .link {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: $primary-text-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+  &:focus {
+    outline-style: solid;
+    outline-color: $black;
+  }
+}
