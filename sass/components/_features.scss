@@ -1,0 +1,139 @@
+.features {
+  @extend %list;
+
+  @media screen and( min-width:768px ) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.features-element {
+  // width: calc((100% - 4 * 30px) / 4);
+  // margin-right: 30px;
+
+  // &:nth-child(4) {
+  //   margin-right: 0;
+  // }
+
+  @media screen and( min-width:768px ) {
+    width: 50%;
+  }
+  &:nth-child(4) {
+  @media screen and( max-width: 1200px ) {
+  margin-right: 0;
+
+  }
+}
+
+.features-icon {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: $primary-bg-color;
+  border-radius: 4px;
+}
+
+.antenna {
+  fill: $title-text-color;
+  padding: 25px 102px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: $accent-color;
+  }
+}
+
+.time {
+  fill: $title-text-color;
+  padding: 25px 101.54px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: $accent-color;
+  }
+}
+
+.shedule {
+  fill: $title-text-color;
+  padding: 31.1px 100px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: $accent-color;
+  }
+}
+.astronaut {
+  fill: $title-text-color;
+  padding: 30px 115px 29px 100px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: $accent-color;
+  }
+}
+
+.features-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $title-text-color;
+}
+
+.features-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.direction {
+  @extend %flexWrap;
+  @extend %list;
+}
+.direction-element {
+  width: calc((100% - 3 * 30px) / 3);
+  margin-right: 30px;
+
+  &:nth-child(3) {
+    margin-right: 0;
+  }
+}
+
+.direction-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 27px 0;
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: rgba(47, 48, 58, 0.8);
+  color: $white-color;
+}
+.web,
+.phone,
+.hexagon {
+  position: relative;
+}
