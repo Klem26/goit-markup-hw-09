@@ -1,0 +1,105 @@
+.bg-team {
+  background-color: $primary-bg-color;
+}
+.our-team {
+  // @extend %flexWrap;
+  @extend %list;
+
+  @media screen and( min-width:768px ) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.our-team-element {
+  // width: calc((100% - 4 * 30px) / 4);
+  // margin-right: 30px;
+  // padding-bottom: 30px;
+
+  @media screen and( min-width:768px ) {
+    width: 50%;
+  }
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: $white-color;
+
+  // &:nth-child(4) {
+  //   margin-right: 0;
+  // }
+}
+
+.our-team-title {
+  margin-top: 30px;
+  text-align: center;
+
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.our-team-desc {
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  font-style: normal;
+
+  &:lang(en) {
+    font-family: Roboto, sans-serif;
+  }
+}
+
+.social {
+  @extend %list;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 0 32px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  fill: $social-color;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: $white-color;
+    background-color: $accent-color;
+  }
+  &:focus {
+    fill: $white-color;
+    background-color: $accent-color;
+    outline-style: solid;
+    outline-color: #000000;
+  }
+}
+
+.instagram {
+  width: 20px;
+  height: 20px;
+}
+.twitter {
+  width: 21px;
+  height: 16.25px;
+}
+.facebook {
+  width: 19px;
+  height: 20px;
+}
+.linkedin {
+  width: 20px;
+  height: 20px;
+}
