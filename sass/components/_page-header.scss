@@ -1,0 +1,17 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.page-hader {
+  background-color: $white-color;
+}
+
+.page-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #ececec;
+}
