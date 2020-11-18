@@ -1,0 +1,17 @@
+.logo {
+  @extend %text-styles;
+  font-family: $fontRaleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  &:focus,
+  &:hover {
+    color: $title-text-color;
+    outline-color: $black;
+  }
+}
+
+.logo > span {
+  color: $accent-color;
+}
