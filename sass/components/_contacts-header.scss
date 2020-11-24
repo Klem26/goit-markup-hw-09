@@ -1,13 +1,19 @@
 .header {
   @extend %list;
-
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-
-  & .item:not(:last-child) {
-    margin-right: 30px;
+  @media screen and(min-width:768px) {
+    padding: 21px 0;
+    margin-left: 88px;
   }
+
+  @media screen and(min-width:1200px) {
+    display: flex;
+    margin-left: 305px;
+    & .item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  align-items: center;
 }
 
 .flex-icon {
@@ -32,6 +38,9 @@
 }
 
 .header .link {
+  @media screen and (max-width: 767px) {
+    display: inline-block;
+  }
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
@@ -51,5 +60,13 @@
   &:focus {
     outline-style: solid;
     outline-color: $black;
+  }
+}
+.header .item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+  }
+  @media screen and (max-width: 1100px) {
+    margin-bottom: 10px;
   }
 }
