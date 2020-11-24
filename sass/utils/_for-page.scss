@@ -15,6 +15,9 @@ body {
   color: $primary-text-color;
   font-family: $fontRoboto;
 }
+body .modal-open {
+  overflow: hidden;
+}
 
 a {
   text-decoration: none;
@@ -46,10 +49,7 @@ img {
 }
 
 .section {
-  // padding-top: 94px;
-  // padding-bottom: 94px;
-
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -74,7 +74,10 @@ img {
 }
 
 .no-padding {
-  padding-top: 0;
+  @media screen and (max-width: 1200px) {
+    display: none;
+    padding-top: 0;
+  }
 }
 
 .visuallyhidden:not(:focus):not(:active) {
