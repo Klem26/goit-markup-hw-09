@@ -1,9 +1,21 @@
 .main-nav {
   display: flex;
   align-items: center;
+  @media screen and(max-width:1100px) {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 .page-hader {
+  @media screen and (min-width: 480px) and(max-width:767px) {
+    min-height: 60px;
+    position: relative;
+  }
+  @media screen and(min-width:768px) {
+    min-height: 80px;
+  }
+  display: flex;
   background-color: $white-color;
 }
 
@@ -14,4 +26,64 @@
 
 .border-bottom {
   border-bottom: 1px solid #ececec;
+}
+
+.menu-btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and(min-width:768px) {
+    display: none;
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+  &:focus {
+    outline-style: solid;
+    outline-color: $black;
+  }
+}
+.menu-btn .icon-cross {
+  display: none;
+}
+
+.menu-btn.is-open .icon-cross {
+  display: block;
+}
+.menu-btn.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  @media screen and(max-width:767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $white-color;
+    text-align: center;
+    padding: 60px;
+    border-top: 1px solid #ececec;
+    font-size: 18px;
+    line-height: 1.16;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+
+    &.is-open {
+      display: block;
+      z-index: 3;
+    }
+  }
+  @media screen and(min-width:768px) {
+    display: flex;
+  }
 }
