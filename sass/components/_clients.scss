@@ -1,20 +1,70 @@
 .clients {
-  @extend %flexWrap;
   @extend %list;
-}
 
-.clients-element {
-  width: calc((100% - 6 * 30px) / 6);
-  margin-right: 30px;
+  @media screen and( min-width:480px ) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px -15px 0;
+  }
 
-  &:nth-child(6) {
-    margin-right: 0;
+  @media screen and( min-width:768px ) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and( min-width: 1200px ) {
+    margin-bottom: 0;
   }
 }
 
+.clients-element {
+  @media screen and( min-width:480px ) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.clients-element {
+  @media screen and( min-width:768px ) {
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
+
+  @media screen and( min-width:1200px ) {
+    width: calc((100% - 6 * 30px) / 6);
+
+    margin-bottom: 0;
+  }
+
+  // &:nth-child(6) {
+  //   @media screen and( min-width: 1200px ) {
+  //     margin-right: 0;
+  //   }
+  // }
+  // width: calc((100% - 6 * 30px) / 6);
+  // margin-right: 30px;
+
+  // &:nth-child(6) {
+  //   margin-right: 0;
+  // }
+}
+
+// .clients-element {
+//   &:not(:last-child) {
+//     @media screen and( max-width: 768px ) {
+//       margin-bottom: 30px;
+//     }
+//   }
+// }
+
 .clients-link {
   display: flex;
-  width: 170px;
+  width: 100%;
+  // width: 170px;
   height: 90px;
   justify-content: space-around;
   align-items: center;
