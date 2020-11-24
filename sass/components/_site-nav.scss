@@ -1,18 +1,37 @@
 .site-nav {
   @extend %list;
-  display: flex;
-  margin-left: 93px;
+
+  @media screen and(max-width:767px) {
+    display: inline-block;
+    padding-bottom: 60px;
+  }
+  @media screen and(min-width:768px) {
+    display: flex;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-left: 93px;
+  }
 
   .link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     @extend %text-styles;
+
+    @media screen and(max-width:767px) {
+      display: block;
+      padding-top: 0;
+      // padding-bottom: 8px;
+      margin-bottom: 8px;
+    }
+    @media screen and(min-width:768px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
 
     &:hover {
       color: $accent-color;
@@ -49,5 +68,9 @@
 .site-nav {
   & .item:not(:last-child) {
     margin-right: 50px;
+    @media screen and(max-width:767px) {
+      padding-bottom: 5px;
+      margin: 0 0 40px;
+    }
   }
 }
