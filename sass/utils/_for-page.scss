@@ -49,7 +49,7 @@ img {
 }
 
 .section {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -74,9 +74,13 @@ img {
 }
 
 .no-padding {
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
+  }
+}
+.no-padding {
   @media screen and (max-width: 1200px) {
     display: none;
-    padding-top: 0;
   }
 }
 
