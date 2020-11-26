@@ -1,5 +1,9 @@
 .header {
   @extend %list;
+  @media screen and (max-width: 767px) {
+    margin: 0 100px;
+  }
+
   @media screen and(min-width:768px) {
     padding: 21px 0;
     margin-left: 88px;
@@ -7,7 +11,7 @@
 
   @media screen and(min-width:1200px) {
     display: flex;
-    margin-left: 305px;
+    margin-left: 290px;
     & .item:not(:last-child) {
       margin-right: 30px;
     }
@@ -33,14 +37,11 @@
 
 .item-mobile {
   width: 10px;
-  height: 16px;
+  height: 15px;
   margin-right: 10px;
 }
 
 .header .link {
-  @media screen and (max-width: 767px) {
-    display: inline-block;
-  }
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
