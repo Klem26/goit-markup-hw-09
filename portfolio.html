@@ -18,10 +18,13 @@
     <div class="container page-wrap">
       <nav class="main-nav">
         <a href="./index.html" class="logo"><span>Web</span>Studio</a>
-        <button type="button" class="menu-btn is-open" aria-expanded="false" aria-controls="menu-container"
-          data-menu-button>
+        <button type="button"
+         class="menu-btn is-open" 
+         aria-expanded="false" 
+         aria-controls="menu-container" 
+         data-menu-button>
           <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="icon-cross" href="./images/icon.svg#icon-menu"></use>
+            <use class="icon-cross" href="./images/icon.svg#icon-menu_40px"></use>
             <use class="icon-menu" href="./images/icon.svg#icon-cross"></use>
           </svg>
         </button>
@@ -87,10 +90,19 @@
                 <div class="overlay">
                   <img
                     class="projects"
-                    src="./images/project-1.jpg"
-                    width="370"
-                    height="294"
+                    srcset="
+                   ./images/project-mobile-1.jpg 450w,
+                   ./images/project-mobile-1@2x.jpg 900w,
+                   ./images/project-tablet-1.jpg 354w,
+                   ./images/project-tablet-1@2x.jpg 708w,
+                   ./images/project-desctop-1.jpg 370w,
+                  ./images/project-desctop-1@2x.jpg 740w
+
+                   "
+                   src="./images/project-desctop-1.jpg"
                     alt="Веб-сайт Технокряк"
+
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <div class="description-overlay">
                     <p class="description">
@@ -112,10 +124,19 @@
                 <div class="overlay">
                   <img
                     class="projects"
-                    src="./images/project-2.jpg"
-                    width="370"
-                    height="294"
+                     srcset="
+                    ./images/project-mobile-2.jpg 450w,
+                    ./images/project-mobile-2@2x.jpg 900w,
+                    ./images/project-tablet-2.jpg 354w,
+                    ./images/project-tablet-2@2x.jpg 708w,
+                    ./images/project-desctop-2.jpg 370w,
+                    ./images/project-desctop-2@2x.jpg 740w
+
+                    "
+                    src="./images/project-desctop-2.jpg"
                     alt="Постер New Orlean vs Golden Star"
+
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <div class="description-overlay">
                     <p class="description">
@@ -137,10 +158,19 @@
                 <div class="overlay">
                   <img
                     class="projects"
-                    src="./images/project-3.jpg"
-                    width="370"
-                    height="294"
+                      srcset="
+                    ./images/project-mobile-3.jpg 450w,
+                    ./images/project-mobile-3@2x.jpg 900w,
+                    ./images/project-tablet-3.jpg 354w,
+                    ./images/project-tablet-3@2x.jpg 708w,
+                    ./images/project-desctop-3.jpg 370w,
+                    ./images/project-desctop-3@2x.jpg 740w
+
+                    "
+                    src="./images/project-desctop-3.jpg"
                     alt="Ресторан Seafood"
+
+                    sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <div class="description-overlay">
                     <p class="description">
@@ -162,10 +192,19 @@
                 <div class="overlay">
                   <img
                     class="projects"
-                    src="./images/project-4.jpg"
-                    width="370"
-                    height="294"
+                     srcset="
+                    ./images/project-mobile-4.jpg 450w,
+                    ./images/project-mobile-4@2x.jpg 900w,
+                    ./images/project-tablet-4.jpg 354w,
+                    ./images/project-tablet-4@2x.jpg 708w,
+                    ./images/project-desctop-4.jpg 370w,
+                    ./images/project-desctop-4@2x.jpg 740w
+
+                    "
+                    src="./images/project-desctop-4.jpg"
                     alt="Проект Prime"
+
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <div class="description-overlay">
                     <p class="description">
@@ -188,10 +227,19 @@
                 <div class="overlay">
                   <img
                     class="projects"
-                    src="./images/project-5.jpg"
-                    width="370"
-                    height="294"
+                     srcset="
+                    ./images/project-mobile-5.jpg 450w,
+                    ./images/project-mobile-5@2x.jpg 900w,
+                    ./images/project-tablet-5.jpg 354w,
+                    ./images/project-tablet-5@2x.jpg 708w,
+                    ./images/project-desctop-5.jpg 370w,
+                    ./images/project-desctop-5@2x.jpg 740w
+
+                    "
+                    src="./images/project-desctop-5.jpg"
                     alt="Проект Boxes"
+
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <div class="description-overlay">
                     <p class="description">
@@ -213,10 +261,19 @@
                 <div class="overlay">
                   <img
                     class="projects"
-                    src="./images/project-6.jpg"
-                    width="370"
-                    height="294"
+                     srcset="
+                    ./images/project-mobile-6.jpg 450w,
+                    ./images/project-mobile-6@2x.jpg 900w,
+                    ./images/project-tablet-6.jpg 354w,
+                    ./images/project-tablet-6@2x.jpg 708w,
+                    ./images/project-desctop-6.jpg 370w,
+                    ./images/project-desctop-6@2x.jpg 740w
+
+                    "
+                    src="./images/project-desctop-6.jpg"
                     alt="Inspiration has no Borders"
+
+                     sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <div class="description-overlay">
                     <p class="description">
@@ -238,10 +295,19 @@
                 <div class="overlay">
                   <img
                     class="projects"
-                    src="./images/project-7.jpg"
-                    width="370"
-                    height="294"
+                     srcset="
+                    ./images/project-mobile-7.jpg 450w,
+                    ./images/project-mobile-7@2x.jpg 900w,
+                    ./images/project-tablet-7.jpg 354w,
+                    ./images/project-tablet-7@2x.jpg 708w,
+                    ./images/project-desctop-7.jpg 370w,
+                    ./images/project-desctop-7@2x.jpg 740w
+
+                    "
+                    src="./images/project-desctop-7.jpg"
                     alt="Издание Limited Edition"
+
+                     sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <div class="description-overlay">
                     <p class="description">
@@ -263,10 +329,19 @@
                 <div class="overlay">
                   <img
                     class="projects"
-                    src="./images/project-8.jpg"
-                    width="370"
-                    height="294"
+                     srcset="
+                    ./images/project-mobile-8.jpg 450w,
+                    ./images/project-mobile-8@2x.jpg 900w,
+                    ./images/project-tablet-8.jpg 354w,
+                    ./images/project-tablet-8@2x.jpg 708w,
+                    ./images/project-desctop-8.jpg 370w,
+                    ./images/project-desctop-8@2x.jpg 740w
+
+                    "
+                    src="./images/project-desctop-8.jpg"
                     alt="Проект LAB"
+
+                     sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <div class="description-overlay">
                     <p class="description">
@@ -288,10 +363,19 @@
                 <div class="overlay">
                   <img
                     class="projects"
-                    src="./images/project-9.jpg"
-                    width="370"
-                    height="294"
+                     srcset="
+                    ./images/project-mobile-9.jpg 450w,
+                    ./images/project-mobile-9@2x.jpg 900w,
+                    ./images/project-tablet-9.jpg 354w,
+                    ./images/project-tablet-9@2x.jpg 708w,
+                    ./images/project-desctop-9.jpg 370w,
+                    ./images/project-desctop-9@2x.jpg 740w
+
+                    "
+                    src="./images/project-desctop-9.jpg"
                     alt="Growing Business"
+
+                     sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <div class="description-overlay">
                     <p class="description">
