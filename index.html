@@ -31,6 +31,7 @@
           </button>
 
           <div  class="menu-container" id="menu-container" data-menu > 
+            
             <ul class="site-nav list">
                 <li class="item">
                 <a href="./index.html" class="link current">Студия</a>
@@ -142,7 +143,7 @@
                 "
                   alt="разработчик"
                 src="./images/img-1.jpg"
-               sizes="(min-width: 1200px) 33vw, (min-width: 480px)100vw"
+               sizes="(min-width: 1200px) 370px , 100vw"
       
               />
               <h3 class="direction-text">Десктопные приложения</h3>
@@ -156,7 +157,7 @@
                 "
                  alt="тефон"
                 src="./images/img-2.jpg"
-                sizes="(min-width: 1200px) 33vw, (min-width: 480px)100vw"
+                sizes="(min-width: 1200px) 370px , 100vw"
               />
               <h3 class="direction-text">Мобильные приложения</h3>
             </li>
@@ -169,7 +170,7 @@
                 ./images/img-3.jpg 370w,
                 ./images/img-3@2x.jpg 740w
                 "
-                sizes="(min-width: 1200px) 33vw, (min-width: 480px)100vw"
+                sizes="(min-width: 1200px) 370px , 100vw"
                
               />
               <h3 class="direction-text">Дизайнерские решения</h3>
@@ -184,23 +185,20 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="our-team list">
             <li class="our-team-element">
+              <picture>
+                <source media="(min-width: 1200px)" srcset=" ./images/prodact-desctop1.jpg 1x,
+              ./images/prodact-desctop2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./images/prodact-tablet.jpg 1x,
+              ./images/prodact-tablet@2x.jpg 2x">
+              <source media="(min-width: 450px)" srcset="./images/prodact-mobile.jpg 1x,
+              ./images/prodact-mobile@2x.jpg 2x" >
+              
               <img
-              srcset="
-              ./images/prodact-mobile.jpg 450w,
-              ./images/prodact-mobile@2x.jpg 900w,
-              ./images/prodact-tablet.jpg 354w,
-              ./images/prodact-tablet@2x.jpg 708w,
-              ./images/prodact-desctop.jpg 270w,
-              ./images/prodact-desctop1.jpg 540w
-
-              "
               src="./images/prodact-mobile.jpg"
-               alt="Игорь Демьяненко"
-          
-
-                 sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
-                
+               alt="Игорь Демьяненко"   
               />
+              </picture>
+
               <h3 class="our-team-title">Игорь Демьяненко</h3>
               <p class="our-team-desc" lang="en">Product Designer</p>
               <ul class="social list">
@@ -235,22 +233,19 @@
               </ul>
             </li>
 
-            <li class="our-team-element">
-              <img
-               srcset="
-              ./images/frontend-mobile.jpg 450w,
-              ./images/frontend-mobile@2x.jpg 900w,
-              ./images/frontend-tablet.jpg 354w,
-              ./images/frontend-tablet@2x.jpg 708w,
-              ./images/frontend-desctop.jpg 270w,
-              ./images/frontend-desctop1.jpg 540w
-
-              "
-              src="./images/frontend-mobile.jpg"
-                alt="Ольга Репина"
-
-              sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
-              />
+            <li class="our-team-element"> 
+              <picture>
+                <source media="(min-width: 1200px)" srcset=" ./images/frontend-desctop1.jpg 1x,
+                            ./images/frontend-desctop2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/frontend-tablet.jpg 1x,
+                            ./images/frontend-tablet@2x.jpg 2x">
+                <source media="(min-width: 450px)" srcset="./images/frontend-mobile.jpg 1x,
+                            ./images/frontend-mobile@2x.jpg 2x">
+              
+                <img src="./images/frontend-mobile.jpg"
+                alt="Ольга Репина" />
+              </picture>
+             
               <h3 class="our-team-title">Ольга Репина</h3>
               <p class="our-team-desc" lang="en">Frontend Developer</p>
               <ul class="social list">
@@ -285,21 +280,18 @@
               </ul>
             </li>
             <li class="our-team-element">
-              <img
-                 srcset="
-              ./images/marketing-mobile.jpg 450w,
-              ./images/marketing-mobile@2x.jpg 900w,
-              ./images/marketing-tablet.jpg 354w,
-              ./images/marketing-tablet@2x.jpg 708w,
-              ./images/marketing-desctop.jpg 270w,
-              ./images/marketing-desctop1.jpg 540w
-
-              "
-              src="./images/marketing-mobile.jpg"
-              alt="Николай Тарасов"
+              <picture>
+                <source media="(min-width: 1200px)" srcset=" ./images/marketing-desctop1.jpg 1x,
+                                            ./images/marketing-desctop2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/marketing-tablet.jpg 1x,
+                                            ./images/marketing-tablet@2x.jpg 2x">
+                <source media="(min-width: 450px)" srcset="./images/marketing-mobile.jpg 1x,
+                                            ./images/marketing-mobile@2x.jpg 2x">
               
-              sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
-              />
+                <img src="./images/marketing-mobile.jpg" 
+                alt="Николай Тарасов" />
+              </picture>
+              
               <h3 class="our-team-title">Николай Тарасов</h3>
               <p class="our-team-desc" lang="en">Marketing</p>
               <ul class="social list">
@@ -334,21 +326,18 @@
               </ul>
             </li>
             <li class="our-team-element">
-              <img
-                 srcset="
-              ./images/ui-mobile.jpg 450w,
-              ./images/ui-mobile@2x.jpg 900w,
-              ./images/ui-tablet.jpg 354w,
-              ./images/ui-tablet@2x.jpg 708w,
-              ./images/ui-desctop.jpg 270w,
-              ./images/ui-desctop1.jpg 540w
-
-              "
-              src="./images/ui-mobile.jpg"
-                alt="Михаил Ермаков"
-
-              sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw , 100vw"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset=" ./images/ui-desctop1.jpg 1x,
+                                                            ./images/ui-desctop2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/ui-tablet.jpg 1x,
+                                                            ./images/ui-tablet@2x.jpg 2x">
+                <source media="(min-width: 450px)" srcset="./images/ui-mobile.jpg 1x,
+                                                            ./images/ui-mobile@2x.jpg 2x">
+                
+                      <img src="./images/ui-mobile.jpg" 
+                      alt="Михаил Ермаков" />
+              </picture>
+      
               <h3 class="our-team-title">Михаил Ермаков</h3>
               <p class="our-team-desc" lang="en">UI Designer</p>
               <ul class="social list">
@@ -381,7 +370,7 @@
                   </a>
                 </li>
               </ul>
-            </li>
+            </li> 
           </ul>
         </div>
       </section>
