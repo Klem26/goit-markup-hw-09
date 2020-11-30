@@ -56,7 +56,7 @@ img {
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1199px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -195,7 +195,7 @@ img {
   background-color: #ffffff;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .page-hader {
     min-height: 60px;
     position: relative;
@@ -262,7 +262,7 @@ img {
   display: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .menu-container {
     display: none;
     position: absolute;
@@ -397,12 +397,6 @@ img {
           align-items: center;
 }
 
-@media screen and (max-width: 767px) {
-  .header {
-    margin: 0 100px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .header {
     padding: 21px 0;
@@ -431,8 +425,12 @@ img {
           align-items: center;
   fill: #757575;
   color: #757575;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .flex-icon {
+    display: inline-block;
+  }
 }
 
 .item-envelop {
@@ -455,8 +453,8 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #757575;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header .link:hover, .header .link:focus {
@@ -475,7 +473,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1199px) {
   .header .item:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -488,20 +486,18 @@ img {
   margin-right: 0;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .subject {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-image: -webkit-gradient(linear, left top, right top, from(#2f303acc), to(#2f303acc)), url(../images/header-mobile.jpg);
-    background-image: linear-gradient(to right, #2f303acc, #2f303acc), url(../images/header-mobile.jpg);
+    background-image: url(../images/header-mobile.jpg);
   }
 }
 
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (min-resolution: 2dppx) {
   .subject .subject {
-    background-image: -webkit-gradient(linear, left top, right top, from(#2f303acc), to(#2f303acc)), url(../images/header-mobile@2x.jpg);
-    background-image: linear-gradient(to right, #2f303acc, #2f303acc), url(../images/header-mobile@2x.jpg);
+    background-image: url(../images/header-mobile@2x.jpg);
   }
 }
 
@@ -514,29 +510,44 @@ img {
 
 @media screen and (min-width: 768px) {
   .subject {
-    background-image: -webkit-gradient(linear, left top, right top, from(#2f303acc), to(#2f303acc)), url(../images/header-tablet.jpg);
-    background-image: linear-gradient(to right, #2f303acc, #2f303acc), url(../images/header-tablet.jpg);
+    background-image: url(../images/header-tablet.jpg);
+    background-position: center;
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .subject {
-    background-image: -webkit-gradient(linear, left top, right top, from(#2f303acc), to(#2f303acc)), url(../images/header-tablet@2x.jpg);
-    background-image: linear-gradient(to right, #2f303acc, #2f303acc), url(../images/header-tablet@2x.jpg);
+    background-image: url(../images/header-tablet@2x.jpg);
+    background-position: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .subject {
-    background-image: -webkit-gradient(linear, left top, right top, from(#2f303acc), to(#2f303acc)), url(../images/header-desctop.jpg);
-    background-image: linear-gradient(to right, #2f303acc, #2f303acc), url(../images/header-desctop.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(47, 48, 58, 0.4)), color-stop(40%, rgba(47, 48, 58, 0.4))), url(../images/header-desctop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url(../images/header-desctop.jpg);
+    background-position: center;
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .subject {
-    background-image: -webkit-gradient(linear, left top, right top, from(#2f303acc), to(#2f303acc)), url(../images/header-desctop@2x.jpg);
-    background-image: linear-gradient(to right, #2f303acc, #2f303acc), url(../images/header-desctop@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(47, 48, 58, 0.4)), color-stop(40%, rgba(47, 48, 58, 0.4))), url(../images/header-desctop@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url(../images/header-desctop@2x.jpg);
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .position {
+    background: rgba(47, 48, 58, 0.4);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .position {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(47, 48, 58, 0.4)), color-stop(40%, rgba(47, 48, 58, 0.4)));
+    background: linear-gradient(rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%);
   }
 }
 
@@ -554,7 +565,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .hero {
     padding: 118px 0;
     margin: 0 auto;
@@ -716,6 +727,12 @@ img {
   color: #212121;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .features-title {
+    text-align: center;
+  }
+}
+
 .features-desc {
   display: block;
   font-style: normal;
@@ -787,7 +804,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .our-team-element {
     padding-bottom: 24px;
   }
@@ -832,7 +849,7 @@ img {
   font-family: Roboto, sans-serif;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -892,7 +909,7 @@ img {
   height: 20px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .clients {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -920,7 +937,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .clients-element {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
@@ -1029,7 +1046,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .address-footer {
     margin-bottom: 60px;
     text-align: center;
@@ -1088,7 +1105,7 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .join {
     margin-bottom: 60px;
     text-align: center;
@@ -1175,7 +1192,7 @@ img {
   height: 20px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .subscribe {
     text-align: center;
   }
@@ -1186,7 +1203,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 93px;
+    margin-left: auto;
   }
 }
 
@@ -1253,7 +1270,7 @@ img {
   font-size: 100%;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .form-input-subscribe {
     width: 100%;
     margin-bottom: 20px;
@@ -1302,18 +1319,26 @@ img {
   fill: #ffffff;
 }
 
+@media screen and (min-width: 320px) {
+  .icon-send {
+    position: absolute;
+    top: 76%;
+    left: 69%;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .icon-send {
     position: absolute;
     top: 76%;
-    left: 257px;
+    left: 64%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .icon-send {
     position: absolute;
-    top: 56%;
+    top: 46%;
     left: 522px;
   }
 }
