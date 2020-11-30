@@ -8,7 +8,7 @@
 }
 
 .page-hader {
-  @media screen and (min-width: 480px) and(max-width:767px) {
+  @media screen and (min-width: 320px) and(max-width:767px) {
     min-height: 60px;
     position: relative;
   }
@@ -63,7 +63,7 @@
 }
 
 .menu-container {
-  @media screen and(max-width:767px) {
+  @media screen and (min-width: 320px) and(max-width:767px) {
     display: none;
     position: absolute;
     top: 100%;
