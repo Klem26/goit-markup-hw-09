@@ -12,7 +12,7 @@
   }
 }
 .address-footer {
-  @media screen and(min-width:480px) {
+  @media screen and(min-width:320px) {
     margin-bottom: 60px;
     text-align: center;
   }
@@ -72,7 +72,7 @@
   width: 206px;
   margin: 0 auto;
 
-  @media screen and(min-width:480px) {
+  @media screen and(min-width:320px) {
     margin-bottom: 60px;
     text-align: center;
   }
@@ -142,13 +142,13 @@
 }
 
 .subscribe {
-  @media screen and(min-width:480px) {
+  @media screen and(min-width:320px) {
     text-align: center;
   }
 
   @media screen and( min-width:1200px ) {
     display: flex;
-    margin-left: 93px;
+    margin-left: auto;
   }
 }
 .form-subscribe {
@@ -179,7 +179,7 @@
   color: $white-color;
 }
 .form-input-subscribe {
-  @media screen and(min-width:480px) {
+  @media screen and(min-width:320px) {
     width: 100%;
     margin-bottom: 20px;
   }
@@ -231,14 +231,19 @@
 }
 
 .icon-send {
+  @media screen and(min-width:320px) {
+    position: absolute;
+    top: 76%;
+    left: 69%;
+  }
   @media screen and(min-width:480px) {
     position: absolute;
     top: 76%;
-    left: 257px;
+    left: 64%;
   }
   @media screen and(min-width:1200px) {
     position: absolute;
-    top: 56%;
+    top: 46%;
     left: 522px;
   }
 
