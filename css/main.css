@@ -492,25 +492,27 @@ img {
   margin-right: 0;
 }
 
-@media screen and (min-width: 320px) {
-  .subject {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background-image: url(../images/header-mobile.jpg);
-  }
-}
-
-@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (min-resolution: 2dppx) {
-  .subject .subject {
-    background-image: url(../images/header-mobile@2x.jpg);
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .subject {
     max-width: 1600px;
     height: 600px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .subject {
+    background-image: url(../images/header-mobile.jpg);
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (min-resolution: 2dppx) {
+  .subject {
+    background-image: url(../images/header-mobile@2x.jpg);
+    background-position: center;
   }
 }
 
@@ -544,7 +546,7 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .position {
     background: rgba(47, 48, 58, 0.4);
   }
