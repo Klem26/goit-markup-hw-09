@@ -1,7 +1,7 @@
 .subject {
   @media screen and( min-width:1200px ) {
     max-width: 1600px;
-    height: 600px;
+    height: 100%;
   }
 
   background-repeat: no-repeat;
@@ -11,38 +11,54 @@
   margin-right: 0;
 }
 @media screen and (min-width: 320px) {
-  .subject {
-    background-image: url(../images/header-mobile.jpg);
+  .position {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4) 40%,
+        rgba(47, 48, 58, 0.4) 40%
+      ),
+      url(../images/header-mobile.jpg);
     background-position: center;
     display: flex;
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .subject {
-      background-image: url(../images/header-mobile@2x.jpg);
+    .position {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4) 40%,
+          rgba(47, 48, 58, 0.4) 40%
+        ),
+        url(../images/header-mobile@2x.jpg);
       background-position: center;
     }
   }
 }
 
 @media screen and (min-width: 768px) {
-  .subject {
-    background-image: url(../images/header-tablet.jpg);
+  .position {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4) 40%,
+        rgba(47, 48, 58, 0.4) 40%
+      ),
+      url(../images/header-tablet.jpg);
     background-position: center;
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .subject {
-      background-image: url(../images/header-tablet@2x.jpg);
+    .position {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4) 40%,
+          rgba(47, 48, 58, 0.4) 40%
+        ),
+        url(../images/header-tablet@2x.jpg);
       background-position: center;
     }
   }
 }
 
 @media screen and( min-width:1200px ) {
-  .subject {
+  .position {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4) 40%,
         rgba(47, 48, 58, 0.4) 40%
@@ -53,29 +69,18 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .subject {
+    .position {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4) 40%,
           rgba(47, 48, 58, 0.4) 40%
         ),
-        url(../images/header-desctop@2x.jpg);
+        url(../images/header-desctop@1.5x.jpg);
       background-position: center;
     }
   }
 }
 
 .position {
-  @media screen and( min-width:320px ) and( max-width:767px ) {
-    background: rgba(47, 48, 58, 0.4);
-  }
-
-  @media screen and( min-width:768px ) and( max-width:1199px ) {
-    background: linear-gradient(
-      rgba(47, 48, 58, 0.4) 40%,
-      rgba(47, 48, 58, 0.4) 40%
-    );
-  }
-
   @media screen and( min-width:1200px ) {
     display: flex;
     justify-content: center;
