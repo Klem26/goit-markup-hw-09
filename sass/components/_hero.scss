@@ -1,7 +1,7 @@
 .subject {
   @media screen and( min-width:1200px ) {
     max-width: 1600px;
-    height: 100%;
+    height: 600px;
   }
 
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
   margin-left: 0;
   margin-right: 0;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .position {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4) 40%,
@@ -34,7 +34,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .position {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4) 40%,
@@ -58,7 +58,7 @@
 }
 
 @media screen and( min-width:1200px ) {
-  .position {
+  .subject {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4) 40%,
         rgba(47, 48, 58, 0.4) 40%
@@ -69,12 +69,12 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .position {
+    .subject {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4) 40%,
           rgba(47, 48, 58, 0.4) 40%
         ),
-        url(../images/header-desctop@1.5x.jpg);
+        url(../images/header-desctop2x.jpg);
       background-position: center;
     }
   }
@@ -96,6 +96,7 @@
     text-align: center;
   }
   @media screen and( min-width:1200px ) {
+    padding: 200px 0;
     margin: 0 auto;
     max-width: 696px;
     text-align: center;
