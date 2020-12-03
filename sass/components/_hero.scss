@@ -20,6 +20,7 @@
       url(../images/header-mobile.jpg);
     background-position: center;
     display: flex;
+    background-size: cover;
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -31,6 +32,7 @@
         ),
         url(../images/header-mobile@2x.jpg);
       background-position: center;
+      background-size: cover;
     }
   }
 }
@@ -43,6 +45,7 @@
       ),
       url(../images/header-tablet.jpg);
     background-position: center;
+    background-size: cover;
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -54,6 +57,7 @@
         ),
         url(../images/header-tablet@2x.jpg);
       background-position: center;
+      background-size: cover;
     }
   }
 }
