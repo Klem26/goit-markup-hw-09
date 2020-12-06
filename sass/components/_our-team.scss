@@ -67,11 +67,8 @@
 
 .social {
   @extend %list;
-
-  @media screen and (min-width: 320px) {
-    display: flex;
-    justify-content: space-evenly;
-  }
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .social-links {
