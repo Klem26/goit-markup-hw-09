@@ -1,11 +1,9 @@
 .clients {
   @extend %list;
 
-  @media screen and( min-width:320px ) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px -15px 0;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px -15px 0;
 
   @media screen and( min-width:768px ) {
     display: flex;
@@ -19,7 +17,7 @@
 }
 
 .clients-element {
-  @media screen and( min-width:320px ) {
+  @media screen and( max-width:767px ) {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
     &:nth-last-child(-n + 2) {
@@ -86,7 +84,7 @@
 
 .logo-4 {
   width: 79.66px;
-  height: 42.02;
+  height: 42.02px;
 }
 .logo-5 {
   width: 59px;
@@ -94,5 +92,5 @@
 }
 .logo-6 {
   width: 88.48px;
-  height: 45.5;
+  height: 45.5px;
 }
