@@ -8,7 +8,7 @@
 }
 
 .page-hader {
-  @media screen and (min-width: 320px) and(max-width:767px) {
+  @media screen and(max-width:767px) {
     min-height: 60px;
     position: relative;
   }
@@ -63,7 +63,7 @@
 }
 
 .menu-container {
-  @media screen and (min-width: 320px) and(max-width:767px) {
+  @media screen and(max-width:767px) {
     display: none;
     position: absolute;
     top: 100%;
@@ -71,7 +71,7 @@
     width: 100%;
     background-color: $white-color;
     text-align: center;
-    padding: 60px;
+    padding-bottom: 60px;
     border-top: 1px solid #ececec;
     font-size: 18px;
     line-height: 1.16;
