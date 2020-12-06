@@ -36,12 +36,7 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-@media screen and (min-width: 320px) {
-  .container {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 @media screen and (min-width: 480px) {
@@ -201,7 +196,7 @@ img {
   background-color: #ffffff;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .page-hader {
     min-height: 60px;
     position: relative;
@@ -268,7 +263,7 @@ img {
   display: none;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .menu-container {
     display: none;
     position: absolute;
@@ -277,7 +272,7 @@ img {
     width: 100%;
     background-color: #ffffff;
     text-align: center;
-    padding: 60px;
+    padding-bottom: 60px;
     border-top: 1px solid #ececec;
     font-size: 18px;
     line-height: 1.16;
@@ -500,7 +495,7 @@ img {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .position {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(47, 48, 58, 0.4)), color-stop(40%, rgba(47, 48, 58, 0.4))), url(../images/header-mobile.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url(../images/header-mobile.jpg);
@@ -512,7 +507,7 @@ img {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .position {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(47, 48, 58, 0.4)), color-stop(40%, rgba(47, 48, 58, 0.4))), url(../images/header-mobile@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url(../images/header-mobile@2x.jpg);
@@ -544,14 +539,16 @@ img {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(47, 48, 58, 0.4)), color-stop(40%, rgba(47, 48, 58, 0.4))), url(../images/header-desctop1x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url(../images/header-desctop1x.jpg);
     background-position: center;
+    background-size: cover;
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .subject {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(47, 48, 58, 0.4)), color-stop(40%, rgba(47, 48, 58, 0.4))), url(../images/header-desctop2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url(../images/header-desctop2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(47, 48, 58, 0.4)), color-stop(40%, rgba(47, 48, 58, 0.4))), url(../images/header-desctop@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url(../images/header-desctop@2x.jpg);
     background-position: center;
+    background-size: cover;
   }
 }
 
@@ -569,7 +566,7 @@ img {
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 1199px) {
   .hero {
     padding: 118px 0;
     margin: 0 auto;
@@ -854,15 +851,13 @@ img {
   font-family: Roboto, sans-serif;
 }
 
-@media screen and (min-width: 320px) {
-  .social {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .social-links {
@@ -914,15 +909,13 @@ img {
   height: 20px;
 }
 
-@media screen and (min-width: 320px) {
-  .clients {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: -15px -15px 0;
-  }
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px -15px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -942,7 +935,7 @@ img {
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 767px) {
   .clients-element {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
@@ -1017,7 +1010,7 @@ img {
 
 .logo-4 {
   width: 79.66px;
-  height: 42.02;
+  height: 42.02px;
 }
 
 .logo-5 {
@@ -1027,7 +1020,7 @@ img {
 
 .logo-6 {
   width: 88.48px;
-  height: 45.5;
+  height: 45.5px;
 }
 
 .section-footer {
@@ -1051,7 +1044,7 @@ img {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .address-footer {
     margin-bottom: 60px;
     text-align: center;
@@ -1110,7 +1103,7 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .join {
     margin-bottom: 60px;
     text-align: center;
@@ -1197,7 +1190,7 @@ img {
   height: 20px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .subscribe {
     text-align: center;
   }
@@ -1275,7 +1268,7 @@ img {
   font-size: 100%;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 1199px) {
   .form-input-subscribe {
     width: 100%;
     margin-bottom: 20px;
@@ -1324,11 +1317,11 @@ img {
   fill: #ffffff;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 479px) {
   .icon-send {
     position: absolute;
-    top: 76%;
-    left: 64%;
+    top: 77%;
+    left: 66%;
   }
 }
 
