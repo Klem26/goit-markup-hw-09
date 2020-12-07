@@ -11,7 +11,7 @@
   margin-left: 0;
   margin-right: 0;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 237px) and (max-width: 767px) {
   .position {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4) 40%,
@@ -96,7 +96,7 @@
 }
 
 .hero {
-  @media screen and( max-width: 1199px ) {
+  @media screen and (min-width: 237px) and( max-width: 1199px ) {
     padding: 118px 0;
     margin: 0 auto;
     max-width: 360px;
@@ -111,14 +111,12 @@
 }
 
 .subject-title {
-  @media screen and( min-width: 480px ) {
-    line-height: 1.61;
-    font-size: 26px;
-  }
   @media screen and( min-width: 1200px ) {
     font-size: 44px;
     line-height: 1.4;
   }
+  line-height: 1.61;
+  font-size: 26px;
   margin-top: 0;
   margin-bottom: 30px;
 
