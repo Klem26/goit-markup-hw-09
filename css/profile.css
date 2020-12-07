@@ -57,7 +57,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 237px) and (max-width: 1199px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -159,7 +159,7 @@ img {
   background-color: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 237px) and (max-width: 767px) {
   .page-hader {
     min-height: 60px;
     position: relative;
@@ -226,7 +226,7 @@ img {
   display: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 237px) and (max-width: 767px) {
   .menu-container {
     display: none;
     position: absolute;
@@ -275,6 +275,7 @@ img {
 @media screen and (max-width: 767px) {
   .site-nav {
     display: inline-block;
+    padding-top: 60px;
     padding-bottom: 60px;
   }
 }
@@ -391,7 +392,7 @@ img {
   color: #757575;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 237px) and (max-width: 767px) {
   .flex-icon {
     display: inline-block;
   }
@@ -653,7 +654,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 237px) and (max-width: 1199px) {
   .address-footer {
     margin-bottom: 60px;
     text-align: center;
@@ -712,7 +713,7 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 237px) and (max-width: 1199px) {
   .join {
     margin-bottom: 60px;
     text-align: center;
@@ -799,7 +800,7 @@ img {
   height: 20px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 237px) and (max-width: 1199px) {
   .subscribe {
     text-align: center;
   }
@@ -877,7 +878,7 @@ img {
   font-size: 100%;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 237px) and (max-width: 1199px) {
   .form-input-subscribe {
     width: 100%;
     margin-bottom: 20px;
@@ -926,7 +927,7 @@ img {
   fill: #ffffff;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 237px) and (max-width: 479px) {
   .icon-send {
     position: absolute;
     top: 77%;
