@@ -71,6 +71,7 @@
       url(../images/header-desctop1x.jpg);
     background-position: center;
     background-size: cover;
+    margin: auto;
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -83,6 +84,7 @@
         url(../images/header-desctop@2x.jpg);
       background-position: center;
       background-size: cover;
+      margin: auto;
     }
   }
 }
